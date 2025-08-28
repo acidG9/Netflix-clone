@@ -6,12 +6,19 @@ const Login = () => {
   const [isReg, setIsReg] = useState(true);
   const navigate = useNavigate();
 
+  const bgBanner = "/background_banner.jpg";
+
   function handleReg() {
     setIsReg(!isReg);
   }
 
   return (
-    <div className="login">
+    <div
+      className="login"
+      style={{
+        backgroundImage: `linear-gradient(#0000007e, #0000007e), url(${bgBanner})`,
+      }}
+    >
       <img src="logo.png" alt="logo" className="login-logo" />
       <div className="login-form">
         <h1>{isReg ? "Sign In" : "Sign Up"}</h1>
