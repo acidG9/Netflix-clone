@@ -87,3 +87,11 @@
   font-weight: 500;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}

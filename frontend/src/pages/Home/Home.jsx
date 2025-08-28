@@ -31,7 +31,31 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="hero-mobile">
+        <img src="wednesday.jpg" alt="banner" className="banner" />
+        <div className="hero-caption">
+          <img src="we-title.png" alt="title" className="caption-img" />
+          <p>
+            The series follows Wednesday Addams as she attends Nevermore
+            Academy, mastering her psychic abilities and solving supernatural
+            mysteries.
+          </p>
+          <div className="hero-btn">
+            <button className="btn">
+              <img src="play_icon.png" alt="play" />
+              Play
+            </button>
+            <button className="btn dark-btn">
+              <img src="info_icon.png" alt="info" />
+              More info
+            </button>
+          </div>
+        </div>
+      </div>
       <div className="other-cards">
+        <div className="title-mobile">
+          <TitleCards />
+        </div>
         <TitleCards title={"Bollywood movies"} />
         <TitleCards title={"Only on Netflix"} />
         <TitleCards title={"Crime TV Shows"} />

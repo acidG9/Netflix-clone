@@ -29,3 +29,10 @@
   color: gray;
   font-size: 14px;
 }
+
+@media (max-width: 768px) {
+  .footer ul {
+    grid-template-columns: auto auto auto;
+    font-size: 10px;
+  }
+}

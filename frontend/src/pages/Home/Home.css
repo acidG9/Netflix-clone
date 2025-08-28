@@ -68,3 +68,41 @@
 .other-cards {
   padding-left: 6%;
 }
+
+.hero-mobile {
+  display: none;
+}
+
+.title-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    display: none;
+  }
+
+  .hero-mobile {
+    display: block;
+    position: relative;
+  }
+
+  .banner {
+    width: 100vw;
+    height: auto;
+  }
+
+  .caption-img {
+    width: 75%;
+    margin-bottom: 15px;
+    margin-left: -2%;
+  }
+
+  .hero-caption p {
+    font-size: 14px;
+  }
+
+  .title-mobile {
+    display: block;
+  }
+}

@@ -1,11 +1,14 @@
 import "./Navbar.css";
+import { useNavigate } from "react-router-dom";
 
 const Navber = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="navbar">
       <div className="navbar-left">
         <img src="./logo.png" alt="logo" />
-        <ul>
+        <ul className="navbar-list">
           <li>Home</li>
           <li>TV Shows</li>
           <li>Movies</li>
@@ -21,7 +24,10 @@ const Navber = () => {
           <img src="profile_img.png" alt="profile" className="profile" />
           <img src="caret_icon.svg" alt="caret" />
           <div className="dropdown">
-            <p>Signout of Netflix</p>
+            <p className="nav-mobile">TV Shows</p>
+            <p className="nav-mobile">Movies</p>
+            <p className="nav-mobile">My List</p>
+            <p onClick={() => navigate("/")}>Signout of Netflix</p>
           </div>
         </div>
       </div>

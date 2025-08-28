@@ -1,8 +1,10 @@
 import { useState } from "react";
 import "./Login.css";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [isReg, setIsReg] = useState(true);
+  const navigate = useNavigate();
 
   function handleReg() {
     setIsReg(!isReg);
@@ -17,7 +19,9 @@ const Login = () => {
           {isReg || <input type="text" placeholder="Your name" />}
           <input type="text" placeholder="Email" />
           <input type="password" placeholder="Password" />
-          <button>{isReg ? "Sign In" : "Sign Up"}</button>
+          <button onClick={() => navigate("/home")}>
+            {isReg ? "Sign In" : "Sign Up"}
+          </button>
           <div className="form-help">
             <div className="remember">
               <input type="checkbox" />
